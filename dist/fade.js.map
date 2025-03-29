@@ -1,0 +1,1 @@
+{"version":3,"file":"fade.js","sourceRoot":"","sources":["../src/fade.ts"],"names":[],"mappings":"AACA,MAAM,UAAU,IAAI,CAAC,CAAS;IAC5B,OAAO,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,GAAG,EAAE,CAAC,GAAG,EAAE,CAAC,CAAC;AAC7C,CAAC","sourcesContent":["\nexport function fade(t: number) {\n  return t * t * t * (t * (t * 6 - 15) + 10);\n}\n"]}

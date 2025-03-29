@@ -1,0 +1,22 @@
+import { noiseStream } from "./noiseStream";
+import { noiseBoolean } from "./noiseBoolean";
+import { noiseUnit } from "./noiseUnit";
+import { noiseHash } from "./noiseHash";
+import { noise } from "./noise";
+import { squirrel3 } from "./squirrel3";
+export * from "./type/SerializableNoiseState";
+export declare const Noises: {
+    seed: (seed: number) => void;
+    perlin2: (x: number, y: number) => number;
+    perlin3: (x: number, y: number, z: number) => number;
+    simplex2: (x: number, y: number) => number;
+    simplex3: (x: number, y: number, z: number) => number;
+    squirrel3: typeof squirrel3;
+    noise: typeof noise;
+    noiseHash: typeof noiseHash;
+    noiseUnit: typeof noiseUnit;
+    noiseBoolean: typeof noiseBoolean;
+    noiseStream: typeof noiseStream;
+    noiseRange: (seed?: number) => ((max?: number, min?: number) => number);
+    serializableNoiseStream: (state: Partial<import("./type/SerializableNoiseState").SerializableNoiseState>) => (() => number);
+};

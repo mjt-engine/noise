@@ -1,0 +1,1 @@
+{"version":3,"file":"BIT_NOISE.js","sourceRoot":"","sources":["../src/BIT_NOISE.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,UAAU,GAAG,UAAU,CAAC;AACrC,MAAM,CAAC,MAAM,UAAU,GAAG,UAAU,CAAC;AACrC,MAAM,CAAC,MAAM,UAAU,GAAG,UAAU,CAAC","sourcesContent":["export const BIT_NOISE1 = 0xb5297a4d;\nexport const BIT_NOISE2 = 0x68e31da4;\nexport const BIT_NOISE3 = 0x1b56c4e9;\n"]}

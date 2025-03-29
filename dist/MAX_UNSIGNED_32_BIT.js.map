@@ -1,0 +1,1 @@
+{"version":3,"file":"MAX_UNSIGNED_32_BIT.js","sourceRoot":"","sources":["../src/MAX_UNSIGNED_32_BIT.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,mBAAmB,GAAG,UAAU,CAAC","sourcesContent":["export const MAX_UNSIGNED_32_BIT = 4294967295;\n"]}

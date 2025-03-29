@@ -1,0 +1,1 @@
+{"version":3,"file":"lerp.js","sourceRoot":"","sources":["../src/lerp.ts"],"names":[],"mappings":"AACA,MAAM,UAAU,IAAI,CAAC,CAAS,EAAE,CAAS,EAAE,CAAS;IAClD,OAAO,CAAC,CAAC,GAAG,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC;AAC7B,CAAC","sourcesContent":["\nexport function lerp(a: number, b: number, t: number) {\n  return (1 - t) * a + t * b;\n}\n"]}
