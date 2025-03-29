@@ -1,6 +1,6 @@
 {
   "name": "@mjt-engine/noise",
-  "version": "2025.3.28-1717",
+  "version": "2025.3.28-1901",
   "sideEffects": false,
   "description": "noise module",
   "main": "./dist/index.js",

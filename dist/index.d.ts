@@ -6,7 +6,6 @@ import { noise } from "./noise";
 import { squirrel3 } from "./squirrel3";
 export * from "./type/SerializableNoiseState";
 export declare const Noises: {
-    seed: (seed: number) => void;
     perlin2: (x: number, y: number) => number;
     perlin3: (x: number, y: number, z: number) => number;
     simplex2: (x: number, y: number) => number;

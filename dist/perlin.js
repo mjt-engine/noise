@@ -67,7 +67,7 @@ var p = [
 // To remove the need for index wrapping, double the permutation table length
 var perm = new Array(512);
 var gradP = new Array(512);
-export const seed = function (seed) {
+const seed = function (seed) {
     if (seed > 0 && seed < 1) {
         // Scale the seed out
         seed *= 65536;

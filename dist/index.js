@@ -6,11 +6,9 @@ import { noiseUnit } from "./noiseUnit";
 import { noiseHash } from "./noiseHash";
 import { noise } from "./noise";
 import { squirrel3 } from "./squirrel3";
-import { seed } from "./perlin";
 import { perlin2, perlin3, simplex2, simplex3 } from "./perlin";
 export * from "./type/SerializableNoiseState";
 export const Noises = {
-    seed, // TODO perlin/simplex noise functions want state parameter.
     perlin2: (x, y) => {
         return (perlin2(x * 255, y * 255) + 1) / 2;
     },
