@@ -8,18 +8,28 @@
   "type": "module",
   "scripts": {
     "docs": "typedoc src/index.ts",
-    "build": "tsc -b",
     "build-docs": "pnpm run build && pnpm run docs",
     "changelog": "./scripts/changes.sh > CHANGELOG.md",
     "changelog-version": "pnpm run changelog && ./scripts/version.sh",
-    "publish": "pnpm run build-docs && pnpm run changelog-version"
+    "publish": "pnpm run test && pnpm run build-docs && pnpm run changelog-version",
+    "check": "tsc --noEmit",
+    "check:watch": "tsc --noEmit -w",
+    "test:watch": "vitest",
+    "test": "vitest run",
+    "start": "vite build --watch",
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 vite build",
+    "build:watch": "vite build --watch",
+    "dts": "tsc"
   },
   "keywords": [],
   "author": "Matt Taylor (https://mjt.dev)",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^22.15.3",
     "typedoc": "^0.27.9",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4",
+    "vitest": "^3.1.2"
   },
   "dependencies": {}
 }

@@ -1,6 +1,5 @@
 import { noiseUnit } from "./noiseUnit";
 
-
 export function noiseStream(seed: number = 0): () => number {
   const sab = new ArrayBuffer(8);
   const ta = new Uint32Array(sab);
