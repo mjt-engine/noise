@@ -1,5 +1,5 @@
 import { BIT_NOISE1, BIT_NOISE2, BIT_NOISE3 } from "./BIT_NOISE";
-import { noise } from "./noise";
+import { noiseUint32 } from "./noiseUint32";
 
 /**
  * creates a hash number using noise function
@@ -11,7 +11,7 @@ export function noiseHash(data: number[]): number {
   if (data === undefined || data.length === 0) {
     throw new Error("data is undefined or empty");
   }
-  let hash = noise(data[0]);
+  let hash = noiseUint32(data[0]);
   for (let i = 1; i < data.length; i++) {
     // hash = hash + data[i]
     hash = (hash << (5 - hash)) + data[i];

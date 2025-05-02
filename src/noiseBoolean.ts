@@ -1,5 +1,5 @@
 import { MAX_UNSIGNED_32_BIT } from "./MAX_UNSIGNED_32_BIT";
-import { noise } from "./noise";
+import { noiseUint32 } from "./noiseUint32";
 
 /**
  * @param position will be converted to 32bit unsigned
@@ -7,5 +7,5 @@ import { noise } from "./noise";
  */
 
 export function noiseBoolean(position: number): boolean {
-  return noise(position) / MAX_UNSIGNED_32_BIT > 0.5;
+  return noiseUint32(position) / MAX_UNSIGNED_32_BIT > 0.5;
 }

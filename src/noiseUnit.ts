@@ -1,10 +1,10 @@
 import { MAX_UNSIGNED_32_BIT } from "./MAX_UNSIGNED_32_BIT";
-import { noise } from "./noise";
+import { noiseUint32 } from "./noiseUint32";
 
 /**
  * @returns number between 0 and 1
  */
 
 export function noiseUnit(seed: number): number {
-  return noise(seed) / MAX_UNSIGNED_32_BIT;
+  return noiseUint32(seed) / MAX_UNSIGNED_32_BIT;
 }
