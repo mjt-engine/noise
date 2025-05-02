@@ -2,6 +2,7 @@
 
 
 ## 2025-05-01
+- remove deps from build artifacts ([7b1b918](https://github.com/mjt-engine/noise/commit/7b1b918b7283514c96c081e7b34317fac0b5d3e1)) by Matt Taylor
 - added vite/vitest configs ([524c6ff](https://github.com/mjt-engine/noise/commit/524c6ffb013faf6a62c51a16b04740320a9f39f2)) by Matt Taylor
 - fixed naming of noise->noiseUint32, added tests, switched to faster non-Atomic noise ([f21a8c2](https://github.com/mjt-engine/noise/commit/f21a8c2b727a236c73f87b5908a34ca26ef15671)) by Matt Taylor
 - switched to vite build ([ec80aac](https://github.com/mjt-engine/noise/commit/ec80aac73852c8d8bf5fc0dd99da624472d957be)) by Matt Taylor
