@@ -2,7 +2,7 @@ import { noiseStream } from "./noiseStream";
 import { noiseBoolean } from "./noiseBoolean";
 import { noiseUnit } from "./noiseUnit";
 import { noiseHash } from "./noiseHash";
-import { noise } from "./noise";
+import { noiseUint32 } from "./noiseUint32";
 import { squirrel3 } from "./squirrel3";
 export * from "./type/SerializableNoiseState";
 export declare const Noises: {
@@ -11,7 +11,7 @@ export declare const Noises: {
     simplex2: (x: number, y: number) => number;
     simplex3: (x: number, y: number, z: number) => number;
     squirrel3: typeof squirrel3;
-    noise: typeof noise;
+    noiseUint32: typeof noiseUint32;
     noiseHash: typeof noiseHash;
     noiseUnit: typeof noiseUnit;
     noiseBoolean: typeof noiseBoolean;

@@ -2,7 +2,7 @@ import { squirrel3 } from "./squirrel3";
 /**
  * @returns 'random' 32bit unsigned
  */
-export function noise(seed) {
+export function noiseUint32(seed) {
     return squirrel3(seed);
 }
-//# sourceMappingURL=noise.js.map
+//# sourceMappingURL=noiseUint32.js.map

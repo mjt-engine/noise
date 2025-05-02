@@ -4,7 +4,7 @@ import { noiseStream } from "./noiseStream";
 import { noiseBoolean } from "./noiseBoolean";
 import { noiseUnit } from "./noiseUnit";
 import { noiseHash } from "./noiseHash";
-import { noise } from "./noise";
+import { noiseUint32 } from "./noiseUint32";
 import { squirrel3 } from "./squirrel3";
 import { perlin2, perlin3, simplex2, simplex3 } from "./perlin";
 export * from "./type/SerializableNoiseState";
@@ -20,7 +20,7 @@ export const Noises = {
         return (simplex3(x * 255, y * 255, z * 255) + 1) / 2;
     },
     squirrel3,
-    noise,
+    noiseUint32,
     noiseHash,
     noiseUnit,
     noiseBoolean,
